@@ -100,5 +100,7 @@ async def stop(ctx):
         await ctx.send("تم إغلاق المشغل ومغادرة القناة. 👋")
 
 keep_alive()
-# ضع التوكن الخاص بك هنا
-bot.run('YOUR_BOT_TOKEN_HERE')
+import os
+# ... باقي الكود ...
+bot.run(os.getenv('BOT_TOKEN'))
+
